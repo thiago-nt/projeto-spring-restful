@@ -15,6 +15,11 @@ import com.br.odontoprev.model.ListaEventosPre;
 import com.br.odontoprev.model.Orcamentos;
 import com.br.odontoprev.repository.OrcamentosBeneficiarioRepository;
 
+/**
+ * @author Thiago.Tavares
+ * Classe utilizada para implementar os métodos que serão utilizados para acesso 
+ * e persistência dos dados.
+ */
 @Repository
 public class OrcamentosBeneficiarioRepositoryImpl implements OrcamentosBeneficiarioRepository {
 

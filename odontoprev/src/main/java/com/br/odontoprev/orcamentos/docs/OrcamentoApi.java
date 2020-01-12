@@ -16,6 +16,11 @@ import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
+/**
+ * @author Thiago.Tavares
+ * @since 12-01-2020
+ * Interface criada para especificar os métodos que a Api implementará.
+ */
 @Api(value = "orcamentos", tags = {"Orcamentos"})
 public interface OrcamentoApi {
 

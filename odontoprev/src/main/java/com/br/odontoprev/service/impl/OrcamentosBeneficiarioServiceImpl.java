@@ -11,12 +11,17 @@ import com.br.odontoprev.model.Orcamentos;
 import com.br.odontoprev.repository.OrcamentosBeneficiarioRepository;
 import com.br.odontoprev.service.OrcamentosBeneficiarioService;
 
+/**
+ * Classe Service utilizada para implementar os métodos que
+ * serão utilizados pela api Rest e manipulados de acordo com as regras de negocio.
+ * @author Thiago.Tavares
+ */
 @Service
 public class OrcamentosBeneficiarioServiceImpl implements OrcamentosBeneficiarioService {
 
 	@Autowired
-	OrcamentosBeneficiarioRepository orcamentosBeneficiarioRepository;  
-	
+	OrcamentosBeneficiarioRepository orcamentosBeneficiarioRepository;
+
 	@Override
 	public Eventos gerar(Orcamentos orcamentos) {
 		Eventos eventos = orcamentosBeneficiarioRepository.gerarEventos(orcamentos);
@@ -30,7 +35,7 @@ public class OrcamentosBeneficiarioServiceImpl implements OrcamentosBeneficiario
 		eventos.setValorTotalEventosPos(somaValoresEventosPos(eventos));
 		return eventos;
 	}
-	
+
 	public BigDecimal somaValoresEventosPos(Eventos eventos) {
 		BigDecimal somaEventosPos = new BigDecimal("0");
 		for (ListaEventosPos listaPos : eventos.getListaEventosPos()) {
