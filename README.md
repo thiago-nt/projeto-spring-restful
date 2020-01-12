@@ -13,7 +13,7 @@ Java 8 ou versões +.
 ## Para inicializar o projeto e utilizar em modo desenvolvimento.
    mvn spring-boot:run
     
-## Endpoints local com Swagger
+## Documentações dos Endpoints com Swagger
  ### http://localhost:8080/swagger-ui.html#/orcamento-rest-controller/gerarOrcamentoParaBeneficiario
  ### http://localhost:8080/swagger-ui.html#/orcamento-rest-controller/buscarOrcamentoPorAssociado
 
