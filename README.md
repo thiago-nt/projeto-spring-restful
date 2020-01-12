@@ -1,22 +1,23 @@
-## Sistema para gerar e consultar orçamento para beneficiário.
+# Sistema para gerar e consultar orçamento para beneficiário.
 
-# Pré-requisitos
+## Pré-requisitos
    IDE Eclipse ou InteliJ.
    Versão minima Java 8.
    Maven
 
-# Tecnologia
-SpringBoot com Maven 
-Java 8
+## Tecnologia
+SpringBoot 
+Maven 
+Java 8 ou versões +.
 
-# Para inicializar o projeto e utilizar em modo desenvolvimento.
+## Para inicializar o projeto e utilizar em modo desenvolvimento.
    mvn spring-boot:run
     
-# Endpoints local com Swagger
- # http://localhost:8080/swagger-ui.html#/orcamento-rest-controller/gerarOrcamentoParaBeneficiario
- # http://localhost:8080/swagger-ui.html#/orcamento-rest-controller/buscarOrcamentoPorAssociado
+## Endpoints local com Swagger
+ ### http://localhost:8080/swagger-ui.html#/orcamento-rest-controller/gerarOrcamentoParaBeneficiario
+ ### http://localhost:8080/swagger-ui.html#/orcamento-rest-controller/buscarOrcamentoPorAssociado
 
-# Exemplo de entrada em JSON para endpoint gerarOrcamentoParaBeneficiario
+## Exemplo de entrada em JSON para endpoint gerarOrcamentoParaBeneficiario
 {
   "idAssociado": "12",
   "idDentista": "1",
@@ -36,10 +37,10 @@ Java 8
   ]
 }
 
-# Exemplo de entrada em JSON para endpoint buscarOrcamentoPorAssociado
-  Código idAssociado = 12
+## Exemplo de entrada em JSON para endpoint buscarOrcamentoPorAssociado
+ ### Código idAssociado = 12
 
-# Exemplo Retorno JSON para os endpoints buscarOrcamentoPorAssociado e gerarOrcamentoParaBeneficiario
+## Exemplo Retorno JSON para os endpoints buscarOrcamentoPorAssociado e gerarOrcamentoParaBeneficiario
 {
   "listaEventosPre": [
     {
